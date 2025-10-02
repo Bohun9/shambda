@@ -1,0 +1,2 @@
+//@stdout:21
+(\f. (\x. f (\y. x x y)) (\x. f (\y. x x y))) (\fib. \n. if n <= 1 then n else fib (n - 1) + fib (n - 2)) 8
