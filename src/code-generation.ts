@@ -93,7 +93,7 @@ export default function codeGenProgram(
     indentWidth: number = 4
 ): string {
     const headerCode = "#!/bin/bash";
-    const runtimeCode = "source ./runtime.bash";
+    const runtimeCode = "source ./runtime.sh";
     const functionsCode = program.functions
         .map((f) => codeGenFunction(f, indentWidth))
         .join("\n");
